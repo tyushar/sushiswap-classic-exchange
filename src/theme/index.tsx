@@ -45,12 +45,12 @@ export function colors(darkMode: boolean): Colors {
     text2: darkMode ? '#C3C5CB' : '#565A69',
     text3: darkMode ? '#6C7284' : '#9a7c64',
     text4: darkMode ? '#565A69' : '#C3C5CB',
-    text5: darkMode ? '#2C2F36' : '#e6ddd6',
+    text5: darkMode ? '#2C2F36' : '#ff134b',
 
     // backgrounds / greys
     bg1: darkMode ? '#212429' : '#FFFFFF',
-    bg2: darkMode ? '#2C2F36' : '#fff7f2',
-    bg3: darkMode ? '#40444F' : '#e6ddd6',
+    bg2: darkMode ? '#2C2F36' : '#60b8ff',
+    bg3: darkMode ? '#40444F' : '#ff134b',
     bg4: darkMode ? '#565A69' : '#CED0D9',
     bg5: darkMode ? '#6C7284' : '#9a7c64',
 
@@ -59,17 +59,17 @@ export function colors(darkMode: boolean): Colors {
     advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.6)',
 
     //primary colors
-    primary1: darkMode ? '#2172E5' : '#805e49',
+    primary1: darkMode ? '#2172E5' : '#60b8ff',
     primary2: darkMode ? '#3680E7' : '#88715f',
     primary3: darkMode ? '#4D8FEA' : '#aa9585',
-    primary4: darkMode ? '#376bad70' : '#e2d6cf',
-    primary5: darkMode ? '#153d6f70' : '#f0e9e7',
+    primary4: darkMode ? '#376bad70' : '#60b8ff',
+    primary5: darkMode ? '#153d6f70' : '#ff134b',
 
     // color text
-    primaryText1: darkMode ? '#6da8ff' : '#805e49',
+    primaryText1: darkMode ? '#6da8ff' : '#FFFFFF',
 
     // secondary colors
-    secondary1: darkMode ? '#2172E5' : '#805e49',
+    secondary1: darkMode ? '#2172E5' : '#60b8ff',
     secondary2: darkMode ? '#17000b26' : '#e2d6cf',
     secondary3: darkMode ? '#17000b26' : '#f0e9e7',
 
@@ -214,6 +214,6 @@ body {
   background-position: 0 -30vh;
   background-repeat: no-repeat;
   background-image: ${({ theme }) =>
-    `radial-gradient(50% 50% at 50% 50%, ${theme.primary5} 0%, ${transparentize(1, theme.primary4)} 100%)`};
+    `radial-gradient(50% 50% at 50% 50%, ${theme.primary4} 0%, ${transparentize(1, theme.primary4)} 100%)`};
 }
 `
